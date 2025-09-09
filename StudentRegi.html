@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <style>
+        body{
+            font-family: Arial;
+            background-color: azure;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+            justify-content: center;
+            min-height: 10vh;
+        }
+        .form-container{
+            width: 90%;
+            max-width: 600px;
+            background-color: aquamarine;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,1);
+        }
+        .form-name{
+            color: blue;
+            font-size: 30px;
+            text-align: center;
+        }
+        .row{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 2px;
+            margin: 12px;
+            align-items: center;
+        }
+        label{
+            color: blue;
+        }
+        input select{
+            transition: border-color 0.3s;
+        }
+        input:focus select:focus{
+            border-color: aqua;
+        }
+        input[type="submit"]:hover {
+        background: red;
+    }
+
+        .hobbies-group { 
+            align-items: center;
+        }
+        .hobbies-group label { 
+            color: black;
+        }
+        @media (max-width: 600px) {
+            .row{
+                grid-template-columns: 1fr;
+            }
+        }
+        @media (min-width: 601px) and (max-width: 900px) {
+            .row{
+                grid-template-columns: 1fr, 1.4fr;
+            }
+        }
+        @media (min-width: 901px)  {
+            .row{
+                grid-template-columns: 1fr, 2fr;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-name">Student Registration</div>
+        <div>
+            <form>
+                <div class="row">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="row">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="row">
+                    <label for="gender">Gender:</label>
+                    <select name="gender" id="gender" required>
+                        <option>Select gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                </div>
+               <div class="row">
+                    <label for="hobbies">Hobbies:</label>
+                    <div class="hobbies-group">
+                        <label><input type="checkbox" name="h1" value="reading">Reading</label>
+                        <label><input type="checkbox" name="h2" value="sports">Sports</label>
+                        <label><input type="checkbox" name="h3" value="travelling">Travelling</label>
+                        <label><input type="checkbox" name="h4" value="other">Other</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
