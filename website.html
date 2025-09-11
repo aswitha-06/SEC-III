@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COORG NATURAL</title>
+    <style>
+        body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .top-bar {
+      background: #111;
+      color: #fff;
+      font-size: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 20px;
+    }
+    .top-left, .top-right {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      text-decoration: none;
+    }
+    .top-right a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .top-left select {
+      background: #111;
+      color: #fff;
+      border: none;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    .top-left select:focus {
+      outline: none;
+    }
+     header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo img {
+  height: 60px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 8px 12px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #8d7b00;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.search input {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 160px;
+}
+
+    .background-container {
+  position: relative;
+  background: url('./tea.webp') center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  
+  align-items: left;
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+.content {
+  padding: 150px;
+  border-radius: 8px;
+}
+
+.content h1, 
+.content h2, 
+.content h3, 
+.content p {
+  margin: 10px 0;
+}
+.view-button {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: lowercase;
+  border-radius: 4px;
+}
+@media (max-width: 600px) {
+  .background-container {
+    height: auto;
+    padding: 40px 15px;
+    text-align: center;
+  }
+
+  .content {
+    padding: 20px 10px;
+  }
+
+  .content h1 {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .content h2 {
+    font-size: 16px;
+  }
+
+  .content h3 {
+    font-size: 14px;
+  }
+
+  .content p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 5px 0;
+  }
+
+  .view-button {
+    font-size: 14px;
+    padding: 8px 20px;
+    margin-top: 10px;
+    display: inline-block;
+  }
+
+  header,
+  .top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 20px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .icons {
+    justify-content: flex-start;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .search input {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-left">
+            <select>
+                <option>🇺🇸 English</option>
+                <option>🇮🇳 Hindi</option>
+            </select>
+            <select>
+                <option>IND</option>
+                <option>USA</option>
+                <option>UK</option>
+            </select>
+        </div>
+        <div class="top-right">
+            <a href="#">News</a>
+            <span>📞 7829040989</span>
+        </div>
+    </div>
+    <header>
+  <div class="logo">
+    <img src="./logo.jpeg" alt="Coorg Natural Logo" height="60">
+  </div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Women</a>
+    <a href="#">Men</a>
+    <a href="#">Children</a>
+    <a href="#">Sports</a>
+    <a href="#">Accessories</a>
+    <a href="#">About</a>
+  </nav>
+  <div class="icons">
+    <div class="search">
+      <input type="text" placeholder="Search 🔍">
+    </div>
+    <span>👤</span>
+    <span>❤️</span>
+    <span>🛒</span>
+  </div>
+</header>
+    <div class="background-container">
+        <div class="content">
+          <h2>Monsoon specials in progress</h2>
+          <h1>Lead the coffee trend with today’s special offer</h1>
+          <h2>Limited time sale...</h2>
+          <p>Experience the exceptional finesse of our coffee,</p>
+          <p>cultivated in the heart of Coorg.</p>
+          <p>From rich and bold to smooth and mellow,</p> 
+          <p>we offer the perfect brew for every taste.</p>
+          <button class="view-button">view ▶️</button>
+        </div>
+</div>
+</body>
+</html>
