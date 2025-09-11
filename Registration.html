@@ -11,7 +11,6 @@
       margin: 0;
       padding: 20px;
     }
-
     .form-container {
       max-width: 600px;
       margin: auto;
@@ -20,24 +19,20 @@
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
-
     h2 {
       text-align: center;
       color: #333;
     }
-
     form {
       display: grid;
       grid-template-columns: 1fr 2fr;
       gap: 15px;
     }
-
     label {
       font-weight: bold;
       color: #444;
       padding-top: 5px;
     }
-
     input, select {
       padding: 8px;
       border: 1px solid #ccc;
@@ -45,19 +40,15 @@
       font-size: 14px;
       width: 100%;
     }
-
     .gender-options {
       display: flex;
       gap: 15px;
       align-items: center;
     }
-
-    /* Full-width button row */
     .form-row {
       grid-column: span 2;
       text-align: center;
     }
-
     button {
       background: #007BFF;
       color: white;
@@ -66,19 +57,15 @@
       font-size: 16px;
       border-radius: 6px;
       cursor: pointer;
-      transition: background 0.3s; /* smooth hover effect */
+      transition: background 0.3s;
     }
-
     button:hover {
       background: #0056b3;
     }
-
-    /* Responsive: stack fields on small screens */
     @media (max-width: 600px) {
       form {
         grid-template-columns: 1fr;
       }
-
       .form-row {
         grid-column: span 1;
       }
@@ -91,10 +78,8 @@
     <form>
       <label for="fullname">Full Name:</label>
       <input type="text" id="fullname" name="fullname" required>
-
       <label for="email">Email:</label>
       <input type="email" id="email" name="email" required>
-
       <label for="course">Course Selection:</label>
       <select id="course" name="course" required>
         <option value="">-- Select a Course --</option>
@@ -102,20 +87,16 @@
         <option value="datasci">Data Science</option>
         <option value="ai">Artificial Intelligence</option>
       </select>
-
       <label>Gender:</label>
       <div class="gender-options">
         <label><input type="radio" name="gender" value="male" required> Male</label>
         <label><input type="radio" name="gender" value="female"> Female</label>
         <label><input type="radio" name="gender" value="other"> Other</label>
       </div>
-
       <label for="password">Password:</label>
       <input type="password" id="password" name="password" required>
-
       <label for="confirm">Confirm Password:</label>
       <input type="password" id="confirm" name="confirm" required>
-
       <div class="form-row">
         <button type="submit">Register</button>
       </div>
